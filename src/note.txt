@@ -1,0 +1,18 @@
+
+
+ -- ngày 1:
+
+ header 50 dòng ~ lặp lại 10 lần =>500 dòng ==> nếu update header => update 10 nơi
+
+ component => gom 50 dòng code lại vào 1 component => sử dụng 10 nơi => gọi tên component 10 lần => nếu update thì update 1 lần duy nhất tại component
+
+ mọi thứ được reder lên layout đều phải gắn vào App
+
+-- ngày 2: state
+ state : quản lý các data liên quan đến việc update layout (re-render)
+ thay đổi state => 1 cách duy nhất => this.setState
+ state ở đâu thì viết setState tại đó
+
+-- ngày 3:
+props ~ giao tiếp giữa 2 component ( cha , con)
+
