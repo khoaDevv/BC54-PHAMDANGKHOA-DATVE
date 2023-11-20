@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 const BookResults = () => {
   const { bookingInfo } = useSelector((state) => state.booking);
   return (
-    <table className="book-results">
+    <table className=" container book-results text-center text-white">
       <thead>
         <tr>
           <th>Name</th>

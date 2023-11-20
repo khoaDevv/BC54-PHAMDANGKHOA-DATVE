@@ -39,7 +39,7 @@ const SeatSelector = ({
   }
 
   return (
-    <div>
+    <div className=" text-center text-white " style={{ fontSize: "30px" }}>
       <table>
         <thead>
           <tr>
@@ -49,7 +49,7 @@ const SeatSelector = ({
             ))}
           </tr>
         </thead>
-        <tbody>
+        <tbody className="">
           {ROWS.map((row, rowIndex) => (
             <tr key={rowIndex}>
               <td>{row}</td>
@@ -72,10 +72,16 @@ const SeatSelector = ({
       </table>
       {isSelecting && (
         <div>
-          <button onClick={onConfirm} disabled={tickets !== selected.size}>
+          <button
+            className="btn btn-primary"
+            onClick={onConfirm}
+            disabled={tickets !== selected.size}
+          >
             Confirm
           </button>
-          <button onClick={onCancel}>Cancel</button>
+          <button className="btn btn-danger" onClick={onCancel}>
+            Cancel
+          </button>
         </div>
       )}
     </div>

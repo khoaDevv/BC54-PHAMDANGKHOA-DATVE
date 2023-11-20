@@ -12,7 +12,7 @@ const BookInfo = ({ isSelecting = false, onStartSelecting }) => {
   }, [isSelecting]);
 
   return (
-    <div>
+    <div className="text-white">
       <label>
         <div>Name</div>
         <input
@@ -33,11 +33,15 @@ const BookInfo = ({ isSelecting = false, onStartSelecting }) => {
       </label>
       <div>
         <button
+          className="btn btn-warning"
           disabled={!name || tickets <= 0 || isSelecting}
           onClick={() => onStartSelecting(name, tickets)}
         >
           Start selecting
         </button>
+      </div>
+      <div>
+        <h2 className="text-center">PLEASE SELECT YOUR SEATS </h2>
       </div>
     </div>
   );
