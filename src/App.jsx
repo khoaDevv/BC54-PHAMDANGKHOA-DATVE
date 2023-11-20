@@ -29,20 +29,22 @@ function App() {
   }
 
   return (
-     
-    <div  className="bg-container" style={{backgroundImage: `url(${backGround})`}}>
+    <div
+      className="bg-container"
+      style={{ backgroundImage: `url(${backGround})` }}
+    >
       <div className="container source_container">
-      <BookInfo isSelecting={selecting} onStartSelecting={onStartSelecting} />
-      <SeatSelector
-        isSelecting={selecting}
-        onConfirmClick={onConfirmClick}
-        onCancelClick={() => {
-          setSelecting(false);
-          setInfo({ name: "", tickets: 0 });
-        }}
-        tickets={info.tickets}
-      />
-      <BookResults />
+        <BookInfo isSelecting={selecting} onStartSelecting={onStartSelecting} />
+        <SeatSelector
+          isSelecting={selecting}
+          onConfirmClick={onConfirmClick}
+          onCancelClick={() => {
+            setSelecting(false);
+            setInfo({ name: "", tickets: 0 });
+          }}
+          tickets={info.tickets}
+        />
+        <BookResults />
       </div>
     </div>
   );
