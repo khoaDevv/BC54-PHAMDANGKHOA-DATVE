@@ -43,6 +43,9 @@ const BookInfo = ({ isSelecting = false, onStartSelecting }) => {
       <div>
         <h2 className="text-center">PLEASE SELECT YOUR SEATS </h2>
       </div>
+      <br />
+      <br />
+      <br />
     </div>
   );
 };
